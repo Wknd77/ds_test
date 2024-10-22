@@ -16,13 +16,8 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.12.3'  # Setze die Python-Version
+        python-version: '3.12.3'  
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt  # Falls es eine requirements-Datei gibt
-    
     - name: Run Python Script
       run: |
         python python_file.py  
