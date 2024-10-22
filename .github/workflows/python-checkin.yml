@@ -27,10 +27,3 @@ jobs:
       run: |
         python python_file.py  
 
-    - name: Commit and push changes
-      run: |
-        git add .
-        git commit -m "Automated check-in of Python files"
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
